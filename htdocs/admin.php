@@ -10,8 +10,8 @@
     $berat_massa = $peserta->getBmi();
     $berat_d = number_format($peserta->getBerat(), 1);
 
-    $peserta1 = ['nama' => 'Sukmayaji', 'umur' => 18, 'jk' => 'Pria', 'bb' => 60.2, 'tb' => 155, 'bmi' => 40.15, 'status' => 'Kegemukan/Obesitas'];
-    $peserta2 = ['nama' => 'Yazidul Yasar', 'umur' => 23, 'jk' => 'Wanita', 'bb' => 30.3, 'tb' => 165, 'bmi' => 26.5, 'status' => 'Normal/Ideal'];
+    $peserta1 = ['nama' => 'Dina', 'umur' => 40, 'jk' => 'Wanita', 'bb' => 63, 'tb' => 162, 'bmi' => 19,44, 'status' => 'Normal/Ideal'];
+    $peserta2 = ['nama' => 'Rizal', 'umur' => 32, 'jk' => 'Proa', 'bb' => 90, 'tb' => 182, 'bmi' => 24,73, 'status' => 'Normal/Ideal'];
     $peserta3 = ['nama' => $peserta->getNama(), 'umur' => $peserta->getUmur(), 'jk' => $peserta->getJk(), 'bb' => $berat_d, 'tb' => $peserta->getTinggi(), 'bmi' => $peserta->getBmi(), 'status' => $peserta->getStatus($berat_massa)];
 
     $array_data = [$peserta1, $peserta2, $peserta3];
